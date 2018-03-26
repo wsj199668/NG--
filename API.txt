@@ -1,0 +1,19 @@
+���������ַ��?
+
+get.php?action=get_arctype&where=reid=0
+
+
+����������
+
+get.php?action=get_total
+
+get.php?action=get_total&where=typeid=' + $scope.typeid;
+
+
+
+����ҳ����ʾ��ͬ������
+
+get.php?action=get_list&offset=' + $scope.limit + '&rows=' + $scope.paginationConf.itemsPerPage + '&orderField=id&orderBy=DESC
+
+
+get.php?action=get_list&offset='+$scope.limit+'&rows='+$scope.paginationConf.itemsPerPage+'&where=typeid='+$scope.typeid+'&orderField=id&orderBy=DESC

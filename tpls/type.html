@@ -1,0 +1,20 @@
+
+
+<div id="myTab" class="list-group" ng-controller="ListTypeCtrl" style="width:400px;height:50px;">
+    <!--<a href="javascript:void(0)" class="list-group-item active">类别</a>-->
+    <!--<a ui-sref="list({type:0})" class="list-group-item">全部</a>-->
+
+    <!--<script src="namesController.js"></script>-->
+
+
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="javascript:void(0)">类别</a></li>
+        <li role="presentation" class="list-group-item" style="margin:0;padding:0;"><a ui-sref="list({type:0})" style="color:#555;">全部</a></li>
+        <li role="presentation"> <a style="float:left;" ng-repeat="list in lists" class="list-group-item"
+                                    ui-sref="list({type:{{list.id}}})">{{list.typename}}</a></li>
+
+    </ul>
+
+    <!--<a ng-repeat="list in lists" class="list-group-item"-->
+       <!--ui-sref="list({type:{{list.id}}})">{{list.typename}}</a>-->
+</div>
